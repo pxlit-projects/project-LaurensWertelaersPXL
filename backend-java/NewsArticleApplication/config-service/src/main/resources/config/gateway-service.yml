@@ -1,0 +1,31 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "localhost"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: newsarticle-service
+          uri: lb://newsarticle-service
+          predicates:
+            - Path=/newsarticle/**
+          filters:
+            - RewritePath=/newsarticle/(?<path>.*), /$\{path}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8061/eureka/
