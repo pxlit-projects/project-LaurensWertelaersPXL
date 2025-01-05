@@ -3,6 +3,7 @@ package be.pxl.service.service;
 import be.pxl.service.client.NewsArticleClient;
 import be.pxl.service.domain.Review;
 import be.pxl.service.domain.dto.ReviewRequest;
+import be.pxl.service.exception.ForbiddenException;
 import be.pxl.service.exception.ResourceNotFoundException;
 import be.pxl.service.repository.ReviewRepository;
 import jakarta.transaction.Transactional;
@@ -60,7 +61,10 @@ public class ReviewService {
 
         Review review = reviewOptional.get();
 
-        //MOET USERNAME ZELFDE ZIJN???
+        //als username niet hetzelfde is gooi exception
+        if (!review.getUserNameEditor().equals(reviewRequest.getUserNameEditor())){
+            throw new ForbiddenException("username is not the same as the review-editor");
+        }
 
         review.setRemark(reviewRequest.getRemark());
 

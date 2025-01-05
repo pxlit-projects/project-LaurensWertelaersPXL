@@ -38,13 +38,21 @@ public class NewsArticleController {
         newsArticleService.submitForApproval(id, newsArticleRequest);
     }
 
+    //API gebruikt door review-service
     @PutMapping("/approveNA/{id}")
     public void approveNA(@PathVariable Long id){
         newsArticleService.approveNA(id);
     }
 
+    //API gebruikt door review-service
     @PutMapping("/disapproveNA/{id}")
     public void disapproveNA(@PathVariable Long id){
         newsArticleService.disapproveNA(id);
+    }
+
+    //API gebruikt door comment-service
+    @GetMapping("/verifyApproved/{id}")
+    public void verifyApproved(@PathVariable Long id){
+        newsArticleService.verifyApproved(id);
     }
 }

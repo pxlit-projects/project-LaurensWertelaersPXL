@@ -72,7 +72,7 @@ public class NewsArticleService {
 
         //als usernameWriter in request niet hetzelfde is gooi exception
         if (!newsArticle.getUsernameWriter().equals(newsArticleRequest.getUsernameWriter())) {
-            throw new ForbiddenException("username is not the same as the article writer");
+            throw new ForbiddenException("username is not the same as the article-writer");
         }
         //als status SUBMITTED is -> zet status op CONCEPT
         if (newsArticle.getStatus() == ArticleStatus.SUBMITTED){
@@ -157,5 +157,21 @@ public class NewsArticleService {
         newsArticle.setStatus(ArticleStatus.DISAPPROVED);
 
         newsArticleRepository.save(newsArticle);
+    }
+
+    public void verifyApproved(Long id) {
+        Optional<NewsArticle> newsArticleOptional = newsArticleRepository.findById(id);
+
+        //als voor die id niks is gevonden gooi exception
+        if (!newsArticleOptional.isPresent()) {
+            throw new ResourceNotFoundException();
+        }
+
+        NewsArticle newsArticle = newsArticleOptional.get();
+
+        //als status niet APPROVED is gooi exception
+        if (newsArticle.getStatus() != ArticleStatus.APPROVED){
+            throw new ForbiddenException("You can only comment on articles with status APPROVED");
+        }
     }
 }
