@@ -10,8 +10,11 @@ import be.pxl.service.exception.ResourceNotFoundException;
 import be.pxl.service.exception.ForbiddenException;
 import be.pxl.service.repository.NewsArticleRepository;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.*;
 
 @Service
@@ -20,8 +23,10 @@ public class NewsArticleService {
 
     private final NewsArticleRepository newsArticleRepository;
     private final NotificationClient notificationClient;
+    private static final Logger logger = LoggerFactory.getLogger(NewsArticleService.class);
 
     public List<NewsArticleResponse> getAllNewsArticles() {
+        logger.info("NewsArticleService: getting NewsArticles");
         List<NewsArticle> newsArticles = newsArticleRepository.findAll();
         List<NewsArticleResponse> newsArticleResponses = new ArrayList<>();
         for (NewsArticle newsArticle : newsArticles) {
@@ -31,6 +36,7 @@ public class NewsArticleService {
     }
 
     private NewsArticleResponse mapToNewsArticleResponse(NewsArticle newsArticle) {
+        logger.info("NewsArticleService: mapping NewsArticles to NewsArticleResponses");
         return NewsArticleResponse.builder()
                 .id(newsArticle.getId())
                 .status(newsArticle.getStatus())
@@ -42,25 +48,19 @@ public class NewsArticleService {
     }
 
     public void createNewsArticle(NewsArticleRequest newsArticleRequest) {
+        logger.info("NewsArticleService: creating NewsArticle");
         NewsArticle newsArticle = NewsArticle.builder()
                 .status(ArticleStatus.CONCEPT) //standaard status CONCEPT geven
                 .content(newsArticleRequest.getContent())
                 .title(newsArticleRequest.getTitle())
                 .usernameWriter(newsArticleRequest.getUsernameWriter())
-                .creationDate(new Date())
+                .creationDate(LocalDateTime.now())
                 .build();
         newsArticleRepository.save(newsArticle);
-
-        //NOG AANPASSEN?
-        //enkel toegevoegd om notification service ergens te gebruiken (om te zien of hij werkt)
-        NotificationRequest notificationRequest = NotificationRequest.builder()
-                .message("newsArticle aangemaakt")
-                .sender("Laurens")
-                .build();
-        notificationClient.sendNotification(notificationRequest);
     }
 
     public void saveAsConcept(Long id, NewsArticleRequest newsArticleRequest) {
+        logger.info("NewsArticleService: saving as concept");
         Optional<NewsArticle> newsArticleOptional = newsArticleRepository.findById(id);
 
         //als voor die id niks is gevonden gooi exception
@@ -97,6 +97,7 @@ public class NewsArticleService {
     }
 
     public void submitForApproval(Long id, NewsArticleRequest newsArticleRequest) {
+        logger.info("NewsArticleService: submitting for approval");
         Optional<NewsArticle> newsArticleOptional = newsArticleRepository.findById(id);
 
         //als voor die id niks is gevonden gooi exception
@@ -118,6 +119,7 @@ public class NewsArticleService {
     }
 
     public void approveNA(Long id){
+        logger.info("NewsArticleService: approving");
         Optional<NewsArticle> newsArticleOptional = newsArticleRepository.findById(id);
 
         //als voor die id niks is gevonden gooi exception
@@ -136,9 +138,17 @@ public class NewsArticleService {
         newsArticle.setStatus(ArticleStatus.APPROVED);
 
         newsArticleRepository.save(newsArticle);
+
+        //notification versturen naar de writer van het artikel
+        NotificationRequest notificationRequest = NotificationRequest.builder()
+                .message("Uw artikel met id " + newsArticle.getId() + " werd goedgekeurd.")
+                .receiver(newsArticle.getUsernameWriter())
+                .build();
+        notificationClient.sendNotification(notificationRequest);
     }
 
     public void disapproveNA(Long id) {
+        logger.info("NewsArticleService: disapproving");
         Optional<NewsArticle> newsArticleOptional = newsArticleRepository.findById(id);
 
         //als voor die id niks is gevonden gooi exception
@@ -160,6 +170,7 @@ public class NewsArticleService {
     }
 
     public void verifyApproved(Long id) {
+        logger.info("NewsArticleService: verifying if status is approved");
         Optional<NewsArticle> newsArticleOptional = newsArticleRepository.findById(id);
 
         //als voor die id niks is gevonden gooi exception

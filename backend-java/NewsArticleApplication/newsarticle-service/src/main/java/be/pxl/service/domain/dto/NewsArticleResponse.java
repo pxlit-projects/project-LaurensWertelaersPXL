@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -17,6 +17,6 @@ public class NewsArticleResponse {
     private String title;
     private String content;
     private String usernameWriter;
-    private Date creationDate;
+    private LocalDateTime creationDate;
     private ArticleStatus status;
 }

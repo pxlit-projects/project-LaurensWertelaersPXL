@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -16,6 +16,6 @@ public class CommentResponse {
 
     private Long newsArticleId;
     private String usernameCommenter;
-    private Date creationDate;
+    private LocalDateTime creationDate;
     private String content;
 }

@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "review")
@@ -24,5 +24,5 @@ public class Review {
     private Long newsArticleId;
     private String userNameEditor;
     private String remark;
-    private Date reviewDate;
+    private LocalDateTime reviewDate;
 }

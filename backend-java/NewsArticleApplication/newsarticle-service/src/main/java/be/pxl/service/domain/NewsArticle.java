@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "newsarticle")
@@ -23,7 +23,7 @@ public class NewsArticle {
     private String title;
     private String content;
     private String usernameWriter;
-    private Date creationDate;
+    private LocalDateTime creationDate;
     @Enumerated(EnumType.STRING)
     private ArticleStatus status;
 }

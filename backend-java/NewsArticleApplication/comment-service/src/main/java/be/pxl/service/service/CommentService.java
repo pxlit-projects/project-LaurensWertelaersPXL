@@ -7,9 +7,11 @@ import be.pxl.service.exception.ForbiddenException;
 import be.pxl.service.exception.ResourceNotFoundException;
 import be.pxl.service.repository.CommentRepository;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
@@ -18,9 +20,11 @@ public class CommentService {
 
     private final CommentRepository commentRepository;
     private final NewsArticleClient newsArticleClient;
+    private static final Logger logger = LoggerFactory.getLogger(CommentService.class);
 
 
     public void createComment(CommentRequest commentRequest){
+        logger.info("CommentService: creating comment");
         //nakijken of newsArticleId bestaat en of status APPROVED IS
         newsArticleClient.verifyApproved(commentRequest.getNewsArticleId());
 
@@ -28,7 +32,7 @@ public class CommentService {
         Comment comment = Comment.builder()
                 .newsArticleId(commentRequest.getNewsArticleId())
                 .usernameCommenter(commentRequest.getUsernameCommenter())
-                .creationDate(new Date())
+                .creationDate(LocalDateTime.now())
                 .content(commentRequest.getContent())
                 .build();
 
@@ -37,6 +41,7 @@ public class CommentService {
 
 
     public void updateComment(Long id, CommentRequest commentRequest) {
+        logger.info("CommentService: updating comment");
         Optional<Comment> commentOptional = commentRepository.findById(id);
 
         if (!commentOptional.isPresent()){
@@ -59,6 +64,7 @@ public class CommentService {
     }
 
     public void deleteComment(Long id, CommentRequest commentRequest) {
+        logger.info("CommentService: deleting comment");
         Optional<Comment> commentOptional = commentRepository.findById(id);
 
         if (!commentOptional.isPresent()){

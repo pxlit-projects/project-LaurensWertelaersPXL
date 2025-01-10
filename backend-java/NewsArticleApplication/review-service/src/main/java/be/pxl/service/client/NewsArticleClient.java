@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 @FeignClient(name = "newsarticle-service")
 public interface NewsArticleClient {
 
-    @PutMapping("/newsarticle/approveNA/{id}")
+    @PutMapping("/api/newsarticle/approveNA/{id}")
     void approveNA(@PathVariable("id") Long id);
 
-    @PutMapping("/newsarticle/disapproveNA/{id}")
+    @PutMapping("/api/newsarticle/disapproveNA/{id}")
     void disapproveNA(@PathVariable("id") Long id);
 }

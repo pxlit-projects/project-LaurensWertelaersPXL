@@ -13,7 +13,7 @@ public class NotificationService {
     public void sendMessage(Notification notification){
         log.info("Receiving notification...");
         log.info("sending... {}", notification.getMessage());
-        log.info("TO {}", notification.getSender());
+        log.info("TO {}", notification.getReceiver());
 
     }
 }

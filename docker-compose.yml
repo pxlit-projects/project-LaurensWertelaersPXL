@@ -1,1 +1,43 @@
 # This file will contain a script in orde to start up the system (all microservices) 
+version: '3.8'
+services:
+  newsarticle-service:
+    image: mysql:8.0
+    container_name: newsarticleservice_db
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: newsarticleservice_db
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - newsarticle_db_data:/var/lib/mysql
+
+  review-service:
+    image: mysql:8.0
+    container_name: reviewservice_db
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: reviewservice_db
+    ports:
+      - "3307:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - review_db_data:/var/lib/mysql
+
+  comment-service:
+    image: mysql:8.0
+    container_name: commentservice_db
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: commentservice_db
+    ports:
+      - "3308:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - comment_db_data:/var/lib/mysql
+
+volumes:
+  newsarticle_db_data:
+  review_db_data:
+  comment_db_data:

@@ -6,11 +6,12 @@ import be.pxl.service.domain.dto.ReviewRequest;
 import be.pxl.service.exception.ForbiddenException;
 import be.pxl.service.exception.ResourceNotFoundException;
 import be.pxl.service.repository.ReviewRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
@@ -19,10 +20,12 @@ public class ReviewService {
 
     private final ReviewRepository reviewRepository;
     private final NewsArticleClient newsArticleClient;
+    private static final Logger logger = LoggerFactory.getLogger(ReviewService.class);
 
 
     //Ik zou hier een transaction van willen maken...
     public void approve(ReviewRequest reviewRequest){
+        logger.info("ReviewService: approving");
         //status bijwerken in NewsArticleService
         newsArticleClient.approveNA(reviewRequest.getNewsArticleId());
 
@@ -32,6 +35,7 @@ public class ReviewService {
 
     //Ik zou hier een transaction van willen maken...
     public void disapprove(ReviewRequest reviewRequest) {
+        logger.info("ReviewService: disapproving");
         //status bijwerken in NewsArticleService
         newsArticleClient.disapproveNA(reviewRequest.getNewsArticleId());
 
@@ -41,17 +45,19 @@ public class ReviewService {
 
 
     private void createReview(ReviewRequest reviewRequest){
+        logger.info("ReviewService: creating Review");
         Review review = Review.builder()
                 .newsArticleId(reviewRequest.getNewsArticleId())
                 .userNameEditor(reviewRequest.getUserNameEditor())
                 .remark(reviewRequest.getRemark())
-                .reviewDate(new Date())
+                .reviewDate(LocalDateTime.now())
                 .build();
 
         reviewRepository.save(review);
     }
 
     public void updateRemark(Long id, ReviewRequest reviewRequest){
+        logger.info("ReviewService: updating remark");
         Optional<Review> reviewOptional = reviewRepository.findById(id);
 
         //als niks gevonden is voor gegeven id gooi exception

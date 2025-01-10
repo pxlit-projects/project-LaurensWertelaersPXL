@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "newsarticle-service")
 public interface NewsArticleClient {
 
-    @GetMapping("/newsarticle/verifyApproved/{id}")
+    @GetMapping("/api/newsarticle/verifyApproved/{id}")
     void verifyApproved(@PathVariable("id") Long id);
 }
