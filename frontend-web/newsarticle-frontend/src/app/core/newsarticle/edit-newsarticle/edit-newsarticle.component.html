@@ -1,0 +1,40 @@
+<div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-6">Edit Article</h1>
+  
+    <form [formGroup]="newsArticleForm" (ngSubmit)="onSubmit()" class="space-y-4">
+      <div>
+        <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+        <input id="title" formControlName="title" type="text"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Enter the article title" />
+        <div *ngIf="newsArticleForm.get('title')?.invalid && newsArticleForm.get('title')?.touched"
+          class="text-red-500 text-sm">
+          Title is required and cannot exceed 100 characters.
+        </div>
+      </div>
+  
+      <div>
+        <label for="content" class="block text-sm font-medium text-gray-700">Content</label>
+        <textarea id="content" formControlName="content" rows="5"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Write the article content"></textarea>
+        <div *ngIf="newsArticleForm.get('content')?.invalid && newsArticleForm.get('content')?.touched"
+          class="text-red-500 text-sm">
+          Content is required.
+        </div>
+      </div>
+  
+      <div>
+        <label for="usernameWriter" class="block text-sm font-medium text-gray-700">Author</label>
+        <input id="usernameWriter" formControlName="usernameWriter" type="text"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm bg-gray-100 cursor-not-allowed"
+          readonly />
+      </div>
+  
+      <button type="submit" [disabled]="newsArticleForm.invalid"
+        class="bg-blue-500 text-white px-4 py-2 rounded-md shadow hover:bg-blue-600">
+        Update Article
+      </button>
+    </form>
+  </div>
+  

@@ -35,7 +35,6 @@ export class AddNewsarticleComponent {
     if (this.newsArticleForm.valid) {
       this.newsArticleService.createNewsArticle(this.newsArticleForm.value).subscribe({
         next: (response) => {
-          console.log('Article created successfully:', response);
 
           // Reset het formulier, behoud de waarde van usernameWriter
           this.newsArticleForm.reset({

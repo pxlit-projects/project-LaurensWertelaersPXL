@@ -25,6 +25,12 @@ public class NewsArticleController {
         return new ResponseEntity(newsArticleService.getAllNewsArticles(), HttpStatus.OK);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity getNewsArticleById(@PathVariable Long id){
+        logger.info("NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} ");
+        return new ResponseEntity(newsArticleService.getNewsArticleById(id), HttpStatus.OK);
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void createNewsArticle(@RequestBody NewsArticleRequest newsArticleRequest){

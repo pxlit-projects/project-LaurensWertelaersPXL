@@ -19,6 +19,11 @@ export class NewsarticleService {
 
   constructor() { }
 
+  // get by id
+  getArticleById(id: number): Observable<NewsArticle> {
+    return this.httpClient.get<NewsArticle>(`${this.baseApiUrl}/${id}`);
+  }
+
   //get by name
   getMyNewsArticles(): Observable<NewsArticle[]>{
     let headers = new HttpHeaders({
@@ -33,5 +38,21 @@ export class NewsarticleService {
     return this.httpClient.post<NewsArticle>(this.baseApiUrl, article).pipe(
       tap(() => this.articleAddedSubject.next()) // trigger update
     );
+  }
+
+  // Update (saveAsConcept)
+  updateArticle(article: NewsArticle): Observable<NewsArticle> {
+    return this.httpClient.put<NewsArticle>(`${this.baseApiUrl}/saveAsConcept/${article.id}`, article);
+  }
+
+  // submit for approval
+  submitForApproval(id: number): Observable<void> {
+    const username = this.userService.getUsername();
+    
+    const body = {
+      usernameWriter: username
+    }
+
+    return this.httpClient.put<void>(`${this.baseApiUrl}/submitForApproval/${id}`, body);
   }
 }

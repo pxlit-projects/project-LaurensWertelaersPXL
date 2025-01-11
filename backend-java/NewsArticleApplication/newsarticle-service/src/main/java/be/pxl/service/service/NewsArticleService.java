@@ -200,14 +200,19 @@ public class NewsArticleService {
         logger.info("NewsArticleService: getting all newsarticles with usernameWriter: " + usernameWriter);
         List<NewsArticle> newsArticles = newsArticleRepository.findByUsernameWriter(usernameWriter);
 
-        //if (newsArticles.size() == 0){
-        //    throw new ResourceNotFoundException();
-        //}
-
         List<NewsArticleResponse> newsArticleResponses = new ArrayList<>();
         for (NewsArticle newsArticle : newsArticles){
             newsArticleResponses.add(mapToNewsArticleResponse(newsArticle));
         }
         return newsArticleResponses;
+    }
+
+    public NewsArticleResponse getNewsArticleById(Long id) {
+        logger.info("NewsArticleService: getting newsarticle by id");
+        NewsArticle newsArticle = newsArticleRepository.getById(id);
+
+        NewsArticleResponse newsArticleResponse = mapToNewsArticleResponse(newsArticle);
+        return newsArticleResponse;
+
     }
 }

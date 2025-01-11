@@ -1,23 +1,38 @@
 <div class="p-4 bg-white rounded-lg border border-gray-200 shadow-md">
-    <h2 class="text-xl font-semibold text-gray-800 mb-2">{{ newsArticle.title }}</h2>
-    <p class="text-gray-600 text-sm mb-4">{{ newsArticle.content }}</p>
-  
-    <div class="text-gray-500 text-xs">
-      <p><strong>Author:</strong> {{ newsArticle.usernameWriter }}</p>
-      <p><strong>Created:</strong> {{ newsArticle.creationDate | date: 'medium' }}</p>
-      <p>
-        <strong>Status:</strong>
-        <span
-          [ngClass]="{
+  <h2 class="text-xl font-semibold text-gray-800 mb-2">{{ newsArticle.title }}</h2>
+  <p class="text-gray-600 text-sm mb-4">{{ newsArticle.content }}</p>
+
+  <div class="text-gray-500 text-xs">
+    <p><strong>Author:</strong> {{ newsArticle.usernameWriter }}</p>
+    <p><strong>Created:</strong> {{ newsArticle.creationDate | date: 'medium' }}</p>
+    <p>
+      <strong>Status:</strong>
+      <span [ngClass]="{
             'text-blue-500': newsArticle.status === 'CONCEPT',
             'text-yellow-500': newsArticle.status === 'SUBMITTED',
             'text-green-500': newsArticle.status === 'APPROVED',
             'text-red-500': newsArticle.status === 'DISAPPROVED'
-          }"
-        >
-          {{ newsArticle.status }}
-        </span>
-      </p>
-    </div>
+          }">
+        {{ newsArticle.status }}
+      </span>
+    </p>
   </div>
-  
+  <!-- Edit Knop / save as concept-->
+  <button [ngClass]="{
+    'bg-blue-500 hover:bg-blue-600': newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED',
+    'bg-gray-500': !(newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED'),
+    'cursor-not-allowed': !(newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED')
+  }" [disabled]="!(newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED')"
+    (click)="editArticle(newsArticle.id!)" class="text-white px-4 py-2 rounded-md ">
+    Edit
+  </button>
+  <!-- Submit for Approval Knop -->
+  <button [ngClass]="{
+    'bg-yellow-500 hover:bg-yellow-600': newsArticle.status === 'CONCEPT',
+    'bg-gray-500': newsArticle.status !== 'CONCEPT',
+    'cursor-not-allowed': newsArticle.status !== 'CONCEPT'
+  }" [disabled]="newsArticle.status !== 'CONCEPT'" (click)="submitForApproval(newsArticle.id!)"
+    class="text-white px-4 py-2 rounded-md mt-2">
+    Submit for Approval
+  </button>
+</div>

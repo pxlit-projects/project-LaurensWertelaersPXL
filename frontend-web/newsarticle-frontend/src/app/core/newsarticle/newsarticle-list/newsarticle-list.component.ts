@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { NewsarticleService } from '../../../shared/models/services/newsarticle/newsarticle.service';
 import { NewsarticleItemComponent } from '../newsarticle-item/newsarticle-item.component';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-newsarticle-list',
@@ -46,5 +47,6 @@ export class NewsarticleListComponent implements OnInit, OnDestroy{
         this.subscription.unsubscribe();
       }
   }
+  
   
 }
