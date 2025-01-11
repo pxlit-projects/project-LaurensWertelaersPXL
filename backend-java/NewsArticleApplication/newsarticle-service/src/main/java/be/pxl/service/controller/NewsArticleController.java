@@ -66,4 +66,18 @@ public class NewsArticleController {
         logger.info("NewsArticleController: called verifyApproved() - [GET] /api/newsarticle/verifyApproved/{id} ");
         newsArticleService.verifyApproved(id);
     }
+
+    //getAll met status approved
+    @GetMapping("/approved")
+    public ResponseEntity getAllApprovedNewsArticles() {
+        logger.info("NewsArticleController: called getAllApprovedNewsArticles() - [GET] /api/newsarticle/approved ");
+        return new ResponseEntity(newsArticleService.getAllApprovedNewsArticles(), HttpStatus.OK);
+    }
+
+    //getAll met opgegeven usernameWriter
+    @GetMapping("/myarticles")
+    public ResponseEntity getAllNewsArticlesWithUsername(@RequestHeader String usernameWriter){
+        logger.info("NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles ");
+        return new ResponseEntity(newsArticleService.getAllNewsArticlesWithUsername(usernameWriter), HttpStatus.OK);
+    }
 }

@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-  private username: string | null = null;
-  private role: string | null = null;
+  private username: string = "";
+  private role: string = "";
   
   constructor() { }
 
@@ -14,11 +14,11 @@ export class UserService {
     this.role = role;
   }
 
-  getUsername(): string | null {
+  getUsername(): string{
     return this.username;
   }
 
-  getRole(): string | null {
+  getRole(): string {
     return this.role;
   }
 }

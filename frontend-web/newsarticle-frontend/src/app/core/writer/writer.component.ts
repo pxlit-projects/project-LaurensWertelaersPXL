@@ -1,17 +1,15 @@
 import { Component, inject } from '@angular/core';
-import { UserService } from '../../shared/models/services/user.service';
+import { UserService } from '../../shared/models/services/user/user.service';
+import { NewsarticleListComponent } from "../newsarticle/newsarticle-list/newsarticle-list.component";
+import { AddNewsarticleComponent } from "../newsarticle/add-newsarticle/add-newsarticle.component";
 
 @Component({
   selector: 'app-writer',
   standalone: true,
-  imports: [],
+  imports: [NewsarticleListComponent, AddNewsarticleComponent],
   templateUrl: './writer.component.html',
   styleUrl: './writer.component.css'
 })
 export class WriterComponent {
-  userService: UserService = inject(UserService);
-
-  role = this.userService.getRole();
-  username = this.userService.getUsername();
 
 }

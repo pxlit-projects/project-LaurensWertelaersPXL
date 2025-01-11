@@ -185,4 +185,29 @@ public class NewsArticleService {
             throw new ForbiddenException("You can only comment on articles with status APPROVED");
         }
     }
+
+    public List<NewsArticleResponse> getAllApprovedNewsArticles() {
+        logger.info("NewsArticleService: getting all newsarticles with status approved");
+        List<NewsArticle> newsArticles = newsArticleRepository.findByStatus(ArticleStatus.APPROVED);
+        List<NewsArticleResponse> newsArticleResponses = new ArrayList<>();
+        for (NewsArticle newsArticle : newsArticles){
+            newsArticleResponses.add(mapToNewsArticleResponse(newsArticle));
+        }
+        return newsArticleResponses;
+    }
+
+    public List<NewsArticleResponse> getAllNewsArticlesWithUsername(String usernameWriter) {
+        logger.info("NewsArticleService: getting all newsarticles with usernameWriter: " + usernameWriter);
+        List<NewsArticle> newsArticles = newsArticleRepository.findByUsernameWriter(usernameWriter);
+
+        //if (newsArticles.size() == 0){
+        //    throw new ResourceNotFoundException();
+        //}
+
+        List<NewsArticleResponse> newsArticleResponses = new ArrayList<>();
+        for (NewsArticle newsArticle : newsArticles){
+            newsArticleResponses.add(mapToNewsArticleResponse(newsArticle));
+        }
+        return newsArticleResponses;
+    }
 }

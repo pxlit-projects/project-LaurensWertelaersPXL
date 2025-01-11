@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserService } from '../../shared/models/services/user.service';
+import { UserService } from '../../shared/models/services/user/user.service';
 
 @Component({
   selector: 'app-login',
