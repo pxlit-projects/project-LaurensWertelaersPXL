@@ -1,5 +1,6 @@
 package be.pxl.service.controller;
 
+import be.pxl.service.domain.ArticleStatus;
 import be.pxl.service.domain.dto.NewsArticleRequest;
 import be.pxl.service.service.NewsArticleService;
 import lombok.RequiredArgsConstructor;
@@ -73,11 +74,11 @@ public class NewsArticleController {
         newsArticleService.verifyApproved(id);
     }
 
-    //getAll met status approved
-    @GetMapping("/approved")
-    public ResponseEntity getAllApprovedNewsArticles() {
-        logger.info("NewsArticleController: called getAllApprovedNewsArticles() - [GET] /api/newsarticle/approved ");
-        return new ResponseEntity(newsArticleService.getAllApprovedNewsArticles(), HttpStatus.OK);
+    //getAll met gegeven status approved
+    @GetMapping("/withstatus")
+    public ResponseEntity getAllNewsArticlesWithStatus(@RequestHeader ArticleStatus status) {
+        logger.info("NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved ");
+        return new ResponseEntity(newsArticleService.getAllNewsArticlesWithStatus(status), HttpStatus.OK);
     }
 
     //getAll met opgegeven usernameWriter

@@ -55,4 +55,11 @@ export class NewsarticleService {
 
     return this.httpClient.put<void>(`${this.baseApiUrl}/submitForApproval/${id}`, body);
   }
+
+  //getall maar alleen met gegeven status
+  getNewsArticlesByStatus(status: string): Observable<NewsArticle[]> {
+    return this.httpClient.get<NewsArticle[]>(`${this.baseApiUrl}/withstatus`, {
+      headers: { status },
+    });
+  }
 }

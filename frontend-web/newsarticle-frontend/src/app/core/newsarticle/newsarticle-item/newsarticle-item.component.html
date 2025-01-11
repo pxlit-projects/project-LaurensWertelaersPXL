@@ -18,7 +18,7 @@
     </p>
   </div>
   <!-- Edit Knop / save as concept-->
-  <button [ngClass]="{
+  <button *ngIf="role === 'writer'" [ngClass]="{
     'bg-blue-500 hover:bg-blue-600': newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED',
     'bg-gray-500': !(newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED'),
     'cursor-not-allowed': !(newsArticle.status === 'CONCEPT' || newsArticle.status === 'SUBMITTED')
@@ -27,7 +27,7 @@
     Edit
   </button>
   <!-- Submit for Approval Knop -->
-  <button [ngClass]="{
+  <button *ngIf="role === 'writer'" [ngClass]="{
     'bg-yellow-500 hover:bg-yellow-600': newsArticle.status === 'CONCEPT',
     'bg-gray-500': newsArticle.status !== 'CONCEPT',
     'cursor-not-allowed': newsArticle.status !== 'CONCEPT'
@@ -35,4 +35,46 @@
     class="text-white px-4 py-2 rounded-md mt-2">
     Submit for Approval
   </button>
+
+
+  <!-- Dynamisch Remark Input -->
+
+  <div *ngIf="isApproving">
+    <textarea [(ngModel)]="remark" placeholder="Add a remark" class="border px-2 py-1 rounded-md resize-none w-full"
+      rows="4"></textarea>
+    <button (click)="confirmApprove(newsArticle.id!)"
+      class="bg-green-500 text-white px-4 py-2 rounded-md ml-2">Confirm</button>
+    <button (click)="isApproving = false" class="bg-red-500 text-white px-4 py-2 rounded-md ml-2">Cancel</button>
+  </div>
+
+  <!-- Approve Knop -->
+
+  <button *ngIf="role === 'editor' && newsArticle.status === 'SUBMITTED' && !isApproving && !isDisApproving" 
+  (click)="isApproving = true"
+    [disabled]="userService.getUsername() === newsArticle.usernameWriter" [ngClass]="{
+    'bg-green-500 hover:bg-green-600 text-white': userService.getUsername() !== newsArticle.usernameWriter,
+    'bg-gray-400 text-gray-700 cursor-not-allowed': userService.getUsername() === newsArticle.usernameWriter
+  }" class="px-4 py-2 rounded-md mt-2">
+    Approve Article
+  </button>
+
+  <!-- Disapprove Button -->
+  <div *ngIf="isDisApproving">
+    <textarea [(ngModel)]="remark" placeholder="Add a remark" class="border px-2 py-1 rounded-md resize-none w-full"
+      rows="4"></textarea>
+    <button (click)="disapproveNewsArticle(newsArticle.id!)" class="bg-red-500 text-white px-4 py-2 rounded-md ml-2">
+      Confirm Disapprove
+    </button>
+    <button (click)="isDisApproving = false" class="bg-gray-500 text-white px-4 py-2 rounded-md ml-2">Cancel</button>
+  </div>
+
+  <button *ngIf="role === 'editor' && newsArticle.status === 'SUBMITTED' && !isApproving && !isDisApproving" 
+  (click)="isDisApproving = true"
+    [disabled]="userService.getUsername() === newsArticle.usernameWriter" [ngClass]="{
+    'bg-red-500 hover:bg-red-600 text-white': userService.getUsername() !== newsArticle.usernameWriter,
+    'bg-gray-400 text-gray-700 cursor-not-allowed': userService.getUsername() === newsArticle.usernameWriter
+  }" class="px-4 py-2 rounded-md mt-2">
+    Disapprove Article
+  </button>
+
 </div>

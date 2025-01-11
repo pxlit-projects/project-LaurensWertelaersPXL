@@ -5,6 +5,7 @@ import { NewsarticleService } from '../../../shared/models/services/newsarticle/
 import { NewsarticleItemComponent } from '../newsarticle-item/newsarticle-item.component';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { UserService } from '../../../shared/models/services/user/user.service';
 
 @Component({
   selector: 'app-newsarticle-list',
@@ -13,11 +14,13 @@ import { Router } from '@angular/router';
   templateUrl: './newsarticle-list.component.html',
   styleUrl: './newsarticle-list.component.css'
 })
-export class NewsarticleListComponent implements OnInit, OnDestroy{
+export class NewsarticleListComponent implements OnInit, OnDestroy {
   myNewsArticles: NewsArticle[] | undefined;
   private subscription: Subscription | undefined;
 
   newsArticleService: NewsarticleService = inject(NewsarticleService);
+  userService: UserService = inject(UserService);
+  role: string = this.userService.getRole();
 
 
   ngOnInit(): void {
@@ -31,22 +34,33 @@ export class NewsarticleListComponent implements OnInit, OnDestroy{
   }
 
   fetchArticles(): void {
-    this.subscription = this.newsArticleService.getMyNewsArticles().subscribe({
-      next: (articles) => {
-        this.myNewsArticles = articles;
-      },
-      error: (err) => {
-        console.error('Error met fetchen van news articles: ', err);
-      }
-    });
+    if (this.role === "writer") {
+      this.subscription = this.newsArticleService.getMyNewsArticles().subscribe({
+        next: (articles) => {
+          this.myNewsArticles = articles;
+        },
+        error: (err) => {
+          console.error('Error met fetchen van news articles: ', err);
+        }
+      });
+    } else if (this.role === "editor"){
+      this.newsArticleService.getNewsArticlesByStatus('SUBMITTED').subscribe({
+        next: (articles) => {
+          this.myNewsArticles = articles;
+        },
+        error: (err) => {
+          console.error('Error met fetchen van news articles: ', err);
+        }
+      })
+    }
   }
 
   ngOnDestroy(): void {
-      //opschonen van de subscription
-      if (this.subscription) {
-        this.subscription.unsubscribe();
-      }
+    //opschonen van de subscription
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
-  
-  
+
+
 }

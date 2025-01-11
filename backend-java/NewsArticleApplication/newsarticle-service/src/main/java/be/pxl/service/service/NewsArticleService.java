@@ -186,9 +186,9 @@ public class NewsArticleService {
         }
     }
 
-    public List<NewsArticleResponse> getAllApprovedNewsArticles() {
-        logger.info("NewsArticleService: getting all newsarticles with status approved");
-        List<NewsArticle> newsArticles = newsArticleRepository.findByStatus(ArticleStatus.APPROVED);
+    public List<NewsArticleResponse> getAllNewsArticlesWithStatus(ArticleStatus status) {
+        logger.info("NewsArticleService: getting only newsarticles with given status");
+        List<NewsArticle> newsArticles = newsArticleRepository.findByStatus(status);
         List<NewsArticleResponse> newsArticleResponses = new ArrayList<>();
         for (NewsArticle newsArticle : newsArticles){
             newsArticleResponses.add(mapToNewsArticleResponse(newsArticle));
