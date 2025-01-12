@@ -1,0 +1,7 @@
+<div class="p-4 bg-white rounded-lg border border-gray-200 shadow-md">
+    <p><strong>NewsArticleID:</strong> {{ notification.newsArticleId }}</p>
+    <p><strong>Sender:</strong> {{ notification.senderUsernameEditor }}</p>
+    <p><strong>Status:</strong> {{ notification.approvedOrDisapproved }}</p>
+    <p><strong>Remark:</strong> {{ notification.remark }}</p>
+    <p><strong>Created:</strong> {{ notification.creationDate | date: 'medium' }}</p>
+</div>

@@ -5249,3 +5249,28 @@
 2025-01-12T20:47:24.880+0100 INFO               [main]                         be.pxl.service.CommentServiceApplication - Started CommentServiceApplication in 15.575 seconds (process running for 16.571)
 2025-01-12T20:47:30.086+0100 INFO               [main]                         be.pxl.service.NewsArticleServiceApplication - Started NewsArticleServiceApplication in 15.931 seconds (process running for 17.113)
 2025-01-12T20:47:33.052+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Started ReviewServiceApplication in 15.079 seconds (process running for 16.318)
+2025-01-12T20:56:01.028+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved 
+2025-01-12T20:56:01.028+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting only newsarticles with given status
+2025-01-12T20:56:01.178+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T20:56:01.180+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T20:56:01.180+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T20:56:08.683+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.ReviewController - ReviewController: called approve() - [POST] /api/review/approve 
+2025-01-12T20:56:08.683+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.service.ReviewService - ReviewService: approving
+2025-01-12T20:56:08.789+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called approveNA() - [PUT] /api/newsarticle/approveNA/{id} 
+2025-01-12T20:56:08.789+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: approving
+2025-01-12T20:56:08.878+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.service.ReviewService - ReviewService: creating Review
+2025-01-12T20:56:09.004+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T20:56:09.005+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T20:56:09.014+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T20:58:19.619+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved 
+2025-01-12T20:58:19.619+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting only newsarticles with given status
+2025-01-12T20:58:19.624+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T20:58:19.624+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T20:58:26.872+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.ReviewController - ReviewController: called disapprove() - [POST] /api/review/disapprove 
+2025-01-12T20:58:26.872+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.service.ReviewService - ReviewService: disapproving
+2025-01-12T20:58:26.878+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called disapproveNA() - [PUT] /api/newsarticle/disapproveNA/{id} 
+2025-01-12T20:58:26.878+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: disapproving
+2025-01-12T20:58:26.906+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.service.ReviewService - ReviewService: creating Review
+2025-01-12T20:58:26.929+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T20:58:26.929+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T20:58:26.933+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
