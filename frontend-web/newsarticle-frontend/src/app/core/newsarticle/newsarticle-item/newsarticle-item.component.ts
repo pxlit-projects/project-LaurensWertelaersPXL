@@ -30,6 +30,7 @@ export class NewsarticleItemComponent {
     this.router.navigate([`/edit-article/${id}`]);
   }
 
+  
   submitForApproval(id: number): void {
     this.newsArticleService.submitForApproval(id).subscribe({
       next: () => {
@@ -41,6 +42,7 @@ export class NewsarticleItemComponent {
       }
     });
   }
+    
 
   confirmApprove(newsArticleId: number): void {  
     this.reviewService.approveNewsArticle(newsArticleId, this.remark).subscribe({
@@ -73,4 +75,8 @@ export class NewsarticleItemComponent {
       }
     });
   }
+
+  goToDetails(id: number): void {
+    this.router.navigate([`/article/${id}`]);
+  }  
 }

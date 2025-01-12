@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from "./core/login/login.component";
+import { Component, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
+import { UserService } from './shared/models/services/user/user.service';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,11 @@ import { LoginComponent } from "./core/login/login.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'newsarticle-frontend';
+  userService: UserService = inject(UserService);
+  router: Router = inject(Router);
+
+  onLogout() {
+    this.userService.logout();
+    this.router.navigate(['/login']);
+  }
 }

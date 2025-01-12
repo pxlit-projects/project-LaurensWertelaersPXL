@@ -46,15 +46,17 @@ export class NewsarticleService {
   }
 
   // submit for approval
+  
   submitForApproval(id: number): Observable<void> {
     const username = this.userService.getUsername();
-    
     const body = {
       usernameWriter: username
     }
 
     return this.httpClient.put<void>(`${this.baseApiUrl}/submitForApproval/${id}`, body);
   }
+    
+    
 
   //getall maar alleen met gegeven status
   getNewsArticlesByStatus(status: string): Observable<NewsArticle[]> {

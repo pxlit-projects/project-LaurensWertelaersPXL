@@ -13,6 +13,7 @@ export class AuthGuard implements CanActivate {
   canActivate(): boolean {
     const username = this.userService.getUsername();
     const role = this.userService.getRole();
+
     
     //controleer of beide username & role ingesteld zijn
     if (username && role) {

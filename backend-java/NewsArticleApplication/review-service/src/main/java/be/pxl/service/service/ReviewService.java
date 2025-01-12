@@ -3,6 +3,7 @@ package be.pxl.service.service;
 import be.pxl.service.client.NewsArticleClient;
 import be.pxl.service.domain.Review;
 import be.pxl.service.domain.dto.ReviewRequest;
+import be.pxl.service.domain.dto.ReviewResponse;
 import be.pxl.service.exception.ForbiddenException;
 import be.pxl.service.exception.ResourceNotFoundException;
 import be.pxl.service.repository.ReviewRepository;
@@ -78,4 +79,22 @@ public class ReviewService {
     }
 
 
+    public ReviewResponse getReviewWithNewsArticleId(Long newsArticleId) {
+        Optional<Review> reviewOptional = reviewRepository.getReviewByNewsArticleId(newsArticleId);
+
+        if (!reviewOptional.isPresent()){
+            throw new ResourceNotFoundException();
+        }
+
+        Review review = reviewOptional.get();
+
+        ReviewResponse reviewResponse = ReviewResponse.builder()
+                .id(review.getId())
+                .newsArticleId(review.getNewsArticleId())
+                .userNameEditor(review.getUserNameEditor())
+                .remark(review.getRemark())
+                .reviewDate(review.getReviewDate())
+                .build();
+        return reviewResponse;
+    }
 }

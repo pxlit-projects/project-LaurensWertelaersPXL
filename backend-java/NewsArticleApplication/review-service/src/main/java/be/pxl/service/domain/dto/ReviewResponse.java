@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ReviewResponse {
+    private Long id;
     private Long newsArticleId;
     private String userNameEditor;
     private String remark;

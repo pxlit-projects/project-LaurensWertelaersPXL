@@ -5,6 +5,8 @@ import be.pxl.service.service.ReviewService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,6 +16,12 @@ public class ReviewController {
 
     private final ReviewService reviewService;
     private static final Logger logger = LoggerFactory.getLogger(ReviewController.class);
+
+    //get review by newsarticleid
+    @GetMapping("/ofnewsarticle")
+    public ResponseEntity getReviewWithNewsArticleId(@RequestHeader Long newsArticleId){
+        return new ResponseEntity(reviewService.getReviewWithNewsArticleId(newsArticleId), HttpStatus.OK);
+    }
 
     @PostMapping("/approve")
     public void approve(@RequestBody ReviewRequest reviewRequest) {

@@ -3,6 +3,7 @@ package be.pxl.service.service;
 import be.pxl.service.client.NewsArticleClient;
 import be.pxl.service.domain.Comment;
 import be.pxl.service.domain.dto.CommentRequest;
+import be.pxl.service.domain.dto.CommentResponse;
 import be.pxl.service.exception.ForbiddenException;
 import be.pxl.service.exception.ResourceNotFoundException;
 import be.pxl.service.repository.CommentRepository;
@@ -12,6 +13,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -78,5 +81,26 @@ public class CommentService {
         }
 
         commentRepository.delete(comment);
+    }
+
+    public List<CommentResponse> getAllCommentsWithNewsArticleId(Long newsArticleId) {
+        logger.info("CommentService: getting all comments for specific newsArticleId");
+        List<Comment> comments = commentRepository.getCommentsByNewsArticleId(newsArticleId);
+        List<CommentResponse> commentResponses = new ArrayList<>();
+        for (Comment comment : comments){
+            commentResponses.add(mapToCommentResponse(comment));
+        }
+        return commentResponses;
+    }
+
+    private CommentResponse mapToCommentResponse(Comment comment){
+        logger.info("CommentService: mapping comment object to commentResponse object");
+        return CommentResponse.builder()
+                .id(comment.getId())
+                .newsArticleId(comment.getNewsArticleId())
+                .usernameCommenter(comment.getUsernameCommenter())
+                .creationDate(comment.getCreationDate())
+                .content(comment.getContent())
+                .build();
     }
 }

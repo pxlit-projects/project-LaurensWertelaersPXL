@@ -1,0 +1,13 @@
+
+  <div *ngIf="comments.length > 0; else noComments" class="space-y-4">
+    <app-comment-item 
+      *ngFor="let comment of comments" 
+      [comment]="comment" 
+      (commentDeleted)="onCommentDeleted($event)"
+      class="block border-b border-gray-300 pb-4"
+    ></app-comment-item>
+  </div>
+  
+  <ng-template #noComments>
+    <p class="text-gray-500 text-center mt-6">Er zijn nog geen reacties.</p>
+  </ng-template>
