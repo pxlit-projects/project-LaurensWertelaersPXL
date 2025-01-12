@@ -5,27 +5,27 @@
 
 ## Synchronous communications:
 ### Newsarticle-service:
--Is used by reviewservice when approving or disapproving a newsarticle.
--Is used by commentservice when creating a comment.
+- Is used by reviewservice when approving or disapproving a newsarticle.
+- Is used by commentservice when creating a comment.
 
 #### Review-service:
--When approving or disapproving a newsarticle, the reviewservice calls the newsarticleservice to change the articlestatus in the newsarticleservice.
--When approving or disapporing a newsarticle, the reviewservice calls the notificationservice to create a notification in the notificationservice.
+- When approving or disapproving a newsarticle, the reviewservice calls the newsarticleservice to change the articlestatus in the newsarticleservice.
+- When approving or disapporing a newsarticle, the reviewservice calls the notificationservice to create a notification in the notificationservice.
 
 #### Comment-service:
--When creating a comment, the commentservice calls the newsarticleservice to check if the newsarticle exists and if its status is approved.
+- When creating a comment, the commentservice calls the newsarticleservice to check if the newsarticle exists and if its status is approved.
 
 #### Notification-service:
--Is used by reviewservice when approving/disapproving to create a notification in the notificationservice.
+- Is used by reviewservice when approving/disapproving to create a notification in the notificationservice.
 
 ## API Gateway-service
--All microservices use this microservice to expose their APIs.
+- All microservices use this microservice to expose their APIs.
 
 ## Config-service
--All microservices use this microservice to get their configuration files from on startup.
+- All microservices use this microservice to get their configuration files from on startup.
 
 ## Databases
--Each microservice uses a MySQL database that is each running in a docker container. These databases are started by the docker-compose.yml file.
+- Each microservice uses a MySQL database that is each running in a docker container. These databases are started by the docker-compose.yml file.
 
 
 
