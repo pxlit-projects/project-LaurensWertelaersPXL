@@ -1,0 +1,28 @@
+<div class="filter-container p-6 bg-white shadow-md rounded-lg">
+  <div class="input-group mb-4">
+    <label for="content" class="block text-sm font-medium text-gray-700">Content</label>
+    <input id="content" [(ngModel)]="content" type="text" placeholder="Filter by content"
+      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+  </div>
+
+  <div class="input-group mb-4">
+    <label for="usernameWriter" class="block text-sm font-medium text-gray-700">Author</label>
+    <input id="usernameWriter" [(ngModel)]="usernameWriter" type="text" placeholder="Filter by author"
+      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+  </div>
+
+  <div class="input-group mb-4">
+    <label for="creationDate" class="block text-sm font-medium text-gray-700">Creation Date</label>
+    <input id="creationDate" [(ngModel)]="creationDate" type="date"
+      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+  </div>
+
+  <div class="flex space-x-4">
+    <button (click)="applyFilter()" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      Apply Filter
+    </button>
+    <button (click)="clearFilter()" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500">
+      Clear Filter
+    </button>
+  </div>
+</div>

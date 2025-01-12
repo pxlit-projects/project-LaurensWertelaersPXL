@@ -6,11 +6,12 @@ import { NewsarticleItemComponent } from '../newsarticle-item/newsarticle-item.c
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { UserService } from '../../../shared/models/services/user/user.service';
+import { FilterComponent } from '../../filter/filter.component';
 
 @Component({
   selector: 'app-newsarticle-list',
   standalone: true,
-  imports: [NewsarticleItemComponent, CommonModule],
+  imports: [NewsarticleItemComponent, CommonModule, FilterComponent],
   templateUrl: './newsarticle-list.component.html',
   styleUrl: './newsarticle-list.component.css'
 })
@@ -22,6 +23,7 @@ export class NewsarticleListComponent implements OnInit, OnDestroy {
   userService: UserService = inject(UserService);
   role: string = this.userService.getRole();
 
+  filter: any = {};
 
   ngOnInit(): void {
     //newsarticles ophalen
@@ -52,7 +54,34 @@ export class NewsarticleListComponent implements OnInit, OnDestroy {
           console.error('Error met fetchen van news articles: ', err);
         }
       })
+    } else if (this.role === "member"){
+      this.newsArticleService.getNewsArticlesByStatus('APPROVED').subscribe({
+        next: (articles) => {
+          this.myNewsArticles = this.applyFilters(articles);
+        },
+        error: (err) => {
+          console.error('Error met fetchen van news articles: ', err);
+        }
+      });
     }
+  }
+
+  // pas filters toe op newsarticles
+  applyFilters(articles: NewsArticle[]): NewsArticle[] {
+    return articles.filter(article => {
+      const matchesContent = this.filter.content ? article.content.includes(this.filter.content) : true;
+      const matchesAuthor = this.filter.usernameWriter ? article.usernameWriter.includes(this.filter.usernameWriter) : true;
+      //const matchesDate = this.filter.creationDate ? new Date(article.creationDate).toISOString().split('T')[0] === this.filter.creationDate : true;
+      const matchesDate = this.filter.creationDate ? new Date(article.creationDate) > new Date(this.filter.creationDate) : true;
+
+      return matchesContent && matchesAuthor && matchesDate;
+    });
+  }
+
+  // Handle filter veranderingen van de FilterComponent
+  onFilterChanged(filter: any): void {
+    this.filter = filter;
+    this.fetchArticles();
   }
 
   ngOnDestroy(): void {
