@@ -1,7 +1,10 @@
 package be.pxl.service.service;
 
 import be.pxl.service.client.NewsArticleClient;
+import be.pxl.service.client.NotificationClient;
 import be.pxl.service.domain.Review;
+import be.pxl.service.domain.dto.NewsArticleResponse;
+import be.pxl.service.domain.dto.NotificationRequest;
 import be.pxl.service.domain.dto.ReviewRequest;
 import be.pxl.service.domain.dto.ReviewResponse;
 import be.pxl.service.exception.ForbiddenException;
@@ -21,6 +24,7 @@ public class ReviewService {
 
     private final ReviewRepository reviewRepository;
     private final NewsArticleClient newsArticleClient;
+    private final NotificationClient notificationClient;
     private static final Logger logger = LoggerFactory.getLogger(ReviewService.class);
 
 
@@ -32,6 +36,17 @@ public class ReviewService {
 
         //create oproepen
         createReview(reviewRequest);
+
+        //notification maken
+        NewsArticleResponse newsArticleResponse = newsArticleClient.getById(reviewRequest.getNewsArticleId());
+        NotificationRequest notificationRequest = NotificationRequest.builder()
+                .newsArticleId(reviewRequest.getNewsArticleId())
+                .receiverUsernameWriter(newsArticleResponse.getUsernameWriter())
+                .senderUsernameEditor(reviewRequest.getUserNameEditor())
+                .approvedOrDisapproved("APPROVED")
+                .remark(reviewRequest.getRemark())
+                .build();
+        notificationClient.createNotification(notificationRequest);
     }
 
     //Ik zou hier een transaction van willen maken...
@@ -42,6 +57,17 @@ public class ReviewService {
 
         //create oproepen
         createReview(reviewRequest);
+
+        //notification maken
+        NewsArticleResponse newsArticleResponse = newsArticleClient.getById(reviewRequest.getNewsArticleId());
+        NotificationRequest notificationRequest = NotificationRequest.builder()
+                .newsArticleId(reviewRequest.getNewsArticleId())
+                .receiverUsernameWriter(newsArticleResponse.getUsernameWriter())
+                .senderUsernameEditor(reviewRequest.getUserNameEditor())
+                .approvedOrDisapproved("DISAPPROVED")
+                .remark(reviewRequest.getRemark())
+                .build();
+        notificationClient.createNotification(notificationRequest);
     }
 
 

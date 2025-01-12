@@ -36,8 +36,21 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - comment_db_data:/var/lib/mysql
+  
+  notification-service:
+    image: mysql:8.0
+    container_name: notificationservice_db
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: notificationservice_db
+    ports:
+      - "3309:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - notification_db_data:/var/lib/mysql
 
 volumes:
   newsarticle_db_data:
   review_db_data:
   comment_db_data:
+  notification_db_data:

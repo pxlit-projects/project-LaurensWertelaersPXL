@@ -74,7 +74,7 @@ public class NewsArticleController {
         newsArticleService.verifyApproved(id);
     }
 
-    //getAll met gegeven status approved
+    //getAll met gegeven status
     @GetMapping("/withstatus")
     public ResponseEntity getAllNewsArticlesWithStatus(@RequestHeader ArticleStatus status) {
         logger.info("NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved ");

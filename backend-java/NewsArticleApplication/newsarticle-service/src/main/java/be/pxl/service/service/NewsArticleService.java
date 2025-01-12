@@ -22,7 +22,6 @@ import java.util.*;
 public class NewsArticleService {
 
     private final NewsArticleRepository newsArticleRepository;
-    private final NotificationClient notificationClient;
     private static final Logger logger = LoggerFactory.getLogger(NewsArticleService.class);
 
     public List<NewsArticleResponse> getAllNewsArticles() {
@@ -138,13 +137,6 @@ public class NewsArticleService {
         newsArticle.setStatus(ArticleStatus.APPROVED);
 
         newsArticleRepository.save(newsArticle);
-
-        //notification versturen naar de writer van het artikel
-        NotificationRequest notificationRequest = NotificationRequest.builder()
-                .message("Uw artikel met id " + newsArticle.getId() + " werd goedgekeurd.")
-                .receiver(newsArticle.getUsernameWriter())
-                .build();
-        notificationClient.sendNotification(notificationRequest);
     }
 
     public void disapproveNA(Long id) {
