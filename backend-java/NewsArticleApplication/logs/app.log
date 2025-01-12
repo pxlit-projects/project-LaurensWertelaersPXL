@@ -5613,3 +5613,389 @@
 2025-01-12T21:32:26.015+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
 2025-01-12T21:32:26.015+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
 2025-01-12T21:32:26.015+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:11.893+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:15:11.893+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Febe
+2025-01-12T22:15:11.928+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:11.928+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:11.928+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:11.928+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:11.928+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:11.928+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:20.024+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:15:20.024+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Febe
+2025-01-12T22:15:20.033+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:20.033+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:20.033+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:20.033+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:20.033+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:20.033+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:27.096+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:15:27.096+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Febe
+2025-01-12T22:15:27.103+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:27.103+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:27.103+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:27.103+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:27.103+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:15:27.103+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.190+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:19:23.190+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.202+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.203+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:23.203+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:24.307+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T22:19:24.307+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T22:19:24.321+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:24.350+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: getting all comments for specific newsArticleId
+2025-01-12T22:19:24.372+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T22:19:24.372+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T22:19:24.372+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T22:19:24.372+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T22:19:24.372+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T22:19:24.372+0100 INFO               [http-nio-8085-exec-1]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T22:19:25.677+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:19:25.677+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.687+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.688+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:25.688+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.710+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called createNewsArticle() - [POST] /api/newsarticle 
+2025-01-12T22:19:32.710+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: creating NewsArticle
+2025-01-12T22:19:32.840+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:19:32.840+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:19:32.844+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.844+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.845+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.851+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:19:32.851+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:32.857+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:33.730+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called submitForApproval() - [PUT] /api/newsarticle/submitForApproval/{id} 
+2025-01-12T22:19:33.730+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: submitting for approval
+2025-01-12T22:19:35.395+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T22:19:35.395+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T22:19:35.411+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:35.428+0100 INFO               [http-nio-8085-exec-2]         be.pxl.service.service.CommentService - CommentService: getting all comments for specific newsArticleId
+2025-01-12T22:19:36.485+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:19:36.485+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:36.494+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.861+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:19:41.862+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Ivo
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:19:41.871+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.835+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:21:21.836+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.843+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:21:21.844+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:48.872+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T22:57:48.875+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T22:57:49.341+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T22:57:49.342+0100 INFO               [http-nio-8081-exec-8]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.921+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T23:27:06.922+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.932+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.933+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.933+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.933+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:06.934+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:08.232+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T23:27:08.232+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T23:27:08.250+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:08.353+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: getting all comments for specific newsArticleId
+2025-01-12T23:27:08.430+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:27:08.430+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:27:08.430+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:27:08.431+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:27:08.431+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:27:08.431+0100 INFO               [http-nio-8085-exec-6]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:27:09.764+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T23:27:09.765+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T23:27:09.777+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.777+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.777+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.777+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.777+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.777+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.778+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.778+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.778+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.778+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.778+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.779+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.779+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.779+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.779+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:09.779+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:12.331+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T23:27:12.331+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T23:27:12.343+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.322+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called updateNewsArticle() - [PUT] /api/newsarticle/saveAsConcept/{id} 
+2025-01-12T23:27:14.322+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: saving as concept
+2025-01-12T23:27:14.424+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T23:27:14.425+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T23:27:14.435+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.436+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:14.437+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:16.495+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.controller.NewsArticleController - NewsArticleController: called submitForApproval() - [PUT] /api/newsarticle/submitForApproval/{id} 
+2025-01-12T23:27:16.495+0100 INFO               [http-nio-8081-exec-10]        be.pxl.service.service.NewsArticleService - NewsArticleService: submitting for approval
+2025-01-12T23:27:17.549+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithUsername() - [GET] /api/newsarticle/myarticles 
+2025-01-12T23:27:17.550+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting all newsarticles with usernameWriter: Laurens
+2025-01-12T23:27:17.561+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.561+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.561+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.561+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.561+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.561+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.562+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.562+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.562+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:27:17.563+0100 INFO               [http-nio-8081-exec-9]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.860+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved 
+2025-01-12T23:28:22.860+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting only newsarticles with given status
+2025-01-12T23:28:22.866+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.866+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:22.867+0100 INFO               [http-nio-8081-exec-1]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.360+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved 
+2025-01-12T23:28:26.362+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting only newsarticles with given status
+2025-01-12T23:28:26.377+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.377+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.377+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.377+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.377+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.377+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:26.378+0100 INFO               [http-nio-8081-exec-2]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.482+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved 
+2025-01-12T23:28:27.482+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting only newsarticles with given status
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:27.492+0100 INFO               [http-nio-8081-exec-3]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:28.674+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T23:28:28.675+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T23:28:28.685+0100 INFO               [http-nio-8081-exec-4]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:28.704+0100 INFO               [http-nio-8085-exec-9]         be.pxl.service.service.CommentService - CommentService: getting all comments for specific newsArticleId
+2025-01-12T23:28:28.711+0100 INFO               [http-nio-8085-exec-9]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:28.711+0100 INFO               [http-nio-8085-exec-9]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:30.992+0100 INFO               [http-nio-8085-exec-3]         be.pxl.service.controller.CommentController - CommentController: called createComment() - [POST] /api/comment 
+2025-01-12T23:28:30.992+0100 INFO               [http-nio-8085-exec-3]         be.pxl.service.service.CommentService - CommentService: creating comment
+2025-01-12T23:28:31.090+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called verifyApproved() - [GET] /api/newsarticle/verifyApproved/{id} 
+2025-01-12T23:28:31.090+0100 INFO               [http-nio-8081-exec-5]         be.pxl.service.service.NewsArticleService - NewsArticleService: verifying if status is approved
+2025-01-12T23:28:31.171+0100 INFO               [http-nio-8085-exec-4]         be.pxl.service.service.CommentService - CommentService: getting all comments for specific newsArticleId
+2025-01-12T23:28:31.176+0100 INFO               [http-nio-8085-exec-4]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:31.176+0100 INFO               [http-nio-8085-exec-4]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:31.176+0100 INFO               [http-nio-8085-exec-4]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:35.701+0100 INFO               [http-nio-8085-exec-7]         be.pxl.service.controller.CommentController - CommentController: called updateComment() - [PUT] /api/comment/updateComment/{id} 
+2025-01-12T23:28:35.701+0100 INFO               [http-nio-8085-exec-7]         be.pxl.service.service.CommentService - CommentService: updating comment
+2025-01-12T23:28:36.889+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getNewsArticleById() - [GET] /api/newsarticle{id} 
+2025-01-12T23:28:36.890+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting newsarticle by id
+2025-01-12T23:28:36.898+0100 INFO               [http-nio-8081-exec-6]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:36.930+0100 INFO               [http-nio-8085-exec-8]         be.pxl.service.service.CommentService - CommentService: getting all comments for specific newsArticleId
+2025-01-12T23:28:36.941+0100 INFO               [http-nio-8085-exec-8]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:36.941+0100 INFO               [http-nio-8085-exec-8]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:36.942+0100 INFO               [http-nio-8085-exec-8]         be.pxl.service.service.CommentService - CommentService: mapping comment object to commentResponse object
+2025-01-12T23:28:39.646+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.controller.NewsArticleController - NewsArticleController: called getAllNewsArticlesWithStatus() - [GET] /api/newsarticle/approved 
+2025-01-12T23:28:39.646+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: getting only newsarticles with given status
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.654+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
+2025-01-12T23:28:39.655+0100 INFO               [http-nio-8081-exec-7]         be.pxl.service.service.NewsArticleService - NewsArticleService: mapping NewsArticles to NewsArticleResponses
