@@ -1,6 +1,14 @@
 # This file will contain a script in orde to start up the system (all microservices) 
 version: '3.8'
 services:
+#  angular-app:
+#    container_name: angular-frontend
+#    build:
+#      context: ./frontend-web/newsarticle-frontend
+#      dockerfile: Dockerfile
+#    ports:
+#      - "4200:80" # Map poort 8080 van je machine naar poort 80 van de container
+
   newsarticle-service:
     image: mysql:8.0
     container_name: newsarticleservice_db

@@ -3,12 +3,14 @@ import { UserService } from '../user/user.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, Subject, tap } from 'rxjs';
 import { Comment } from '../../comment/comment.model';
+import { environment } from '../../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommentService {
-  baseApiUrl: string = 'http://localhost:8083/comment/api/comment';
+  baseApiUrl: string = environment.apiUrl + '/comment/api/comment';
+  //baseApiUrl: string = 'http://localhost:8083/comment/api/comment';
   httpClient: HttpClient = inject(HttpClient);
   userService: UserService = inject(UserService);
 

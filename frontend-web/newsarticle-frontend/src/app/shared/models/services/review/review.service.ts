@@ -3,12 +3,14 @@ import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UserService } from '../user/user.service';
 import { Review } from '../../review/review.model';
+import { environment } from '../../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReviewService {
-  private baseUrl: string = 'http://localhost:8083/review/api/review';
+  baseApiUrl: string = environment.apiUrl + '/review/api/review';
+  //baseUrl: string = 'http://localhost:8083/review/api/review';
   httpClient: HttpClient = inject(HttpClient);
   userService: UserService = inject(UserService);
 
@@ -24,7 +26,7 @@ export class ReviewService {
     };
 
     console.log(body);
-    return this.httpClient.post<void>(`${this.baseUrl}/approve`, body);
+    return this.httpClient.post<void>(`${this.baseApiUrl}/approve`, body);
   }
 
   disapproveNewsArticle(newsArticleId: number, remark: string): Observable<void> {
@@ -34,13 +36,13 @@ export class ReviewService {
       userNameEditor,
       remark
     };
-    return this.httpClient.post<void>(`${this.baseUrl}/disapprove`, body);
+    return this.httpClient.post<void>(`${this.baseApiUrl}/disapprove`, body);
   }
 
   getReviewByNewsArticleId(newsArticleId: number): Observable<Review> {
     const headers = new HttpHeaders({ newsArticleId: newsArticleId.toString() });
 
-    return this.httpClient.get<Review>(this.baseUrl + "/ofnewsarticle", { headers });
+    return this.httpClient.get<Review>(this.baseApiUrl + "/ofnewsarticle", { headers });
   }
   
 }

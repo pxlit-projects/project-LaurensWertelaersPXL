@@ -3,13 +3,15 @@ import { inject, Injectable } from '@angular/core';
 import { UserService } from '../user/user.service';
 import { Observable, Subject, tap } from 'rxjs';
 import { NewsArticle } from '../../newsarticle/newsarticle.model';
+import { environment } from '../../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class NewsarticleService {
-  baseApiUrl: string = 'http://localhost:8083/newsarticle/api/newsarticle';
+  baseApiUrl: string = environment.apiUrl + '/newsarticle/api/newsarticle';
+  //baseApiUrl: string = 'http://localhost:8083/newsarticle/api/newsarticle';
   httpClient: HttpClient = inject(HttpClient);
   userService: UserService = inject(UserService);
 
